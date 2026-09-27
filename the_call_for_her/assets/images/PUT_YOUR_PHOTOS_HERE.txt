@@ -1,0 +1,2 @@
+Đặt ảnh của hai đứa ở đây rồi sửa src trong config.js.
+Ví dụ: src: "assets/images/ky-niem-01.jpg"

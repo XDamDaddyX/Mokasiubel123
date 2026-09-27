@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0a12" />
+  <meta name="description" content="Một cái app gì gì đó" />
+  <title>Một cái app gì gì đó</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient-orb orb-one" aria-hidden="true"></div>
+  <div class="ambient-orb orb-two" aria-hidden="true"></div>
+  <main class="stage">
+    <aside class="editorial" aria-hidden="true">
+      <div class="edition"><span class="little-star">✳</span> Cục cức is calling <span class="edition-line"></span> phiên bản giới hạn toàn cầu</div>
+      <div class="editorial-main">
+        <span class="eyebrow">MOKA BELL, DUA THUI XINH LAM</span>
+        <h1>Things I<br /><em>  want</em><br />to tell u<span class="headline-dot">.</span></h1>
+        <p>Ank nhớ em thì anh tạo cái nì, đơn giản là dị hoi</p>
+        <div class="editorial-sign">From <span id="deskFrom">Cục cức</span> <span class="heart">♡</span> To <span id="deskTo">Cục Dàng</span></div>
+      </div>
+      <div class="editorial-bottom"><span>KEEP THIS MOMENT</span><span>✦</span><span>FOREVER & ALWAYS</span></div>
+    </aside>
+
+    <div class="phone-shell">
+      <div id="app" class="phone" aria-label="Trải nghiệm cuộc gọi lãng mạn">
+        <div class="phone-grain" aria-hidden="true"></div>
+        <div class="phone-shine" aria-hidden="true"></div>
+
+        <section id="incoming" class="screen incoming-screen active" aria-label="Cuộc gọi đến">
+          <div class="status-bar"><span id="clock">19:45</span><span>✦ &nbsp; ♥ &nbsp; ▰</span></div>
+          <div class="incoming-orbit" aria-hidden="true"></div>
+          <div class="caller">
+            <p class="section-kicker" id="openingEyebrow">AN INCOMING MEMORY</p>
+            <div class="avatar-wrap">
+              <div class="pulse-ring ring-one"></div><div class="pulse-ring ring-two"></div>
+              <div class="avatar" id="callerAvatar"><span id="avatarLetter">A</span></div>
+              <div class="avatar-heart">♥</div>
+            </div>
+            <p class="incoming-small">Em béo dành cho em từ</p>
+            <h2 id="callerName">CụcCức</h2>
+            <div class="call-type"><span class="green-dot"></span><span id="callType">Cốc cốc mở cửa cho anh đee</span></div>
+            <p class="caller-subtitle" id="callerSubtitle">Để cho anh cưa nhó~~~</p>
+          </div>
+          <div class="incoming-bottom">
+            <p id="openingHint" class="opening-hint">Nhấc máy đi, tuôi có chuyện muốn nói ♡</p>
+            <div class="call-actions">
+              <div class="call-action"><button type="button" id="declineBtn" class="call-btn decline" aria-label="Từ chối cuộc gọi"><svg aria-hidden="true" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.9.34 1.84.58 2.8.7A2 2 0 0 1 22 16.92z"/></svg></button><span>Từ chối</span></div>
+              <div class="call-action"><button type="button" id="answerBtn" class="call-btn answer" aria-label="Trả lời cuộc gọi"><svg aria-hidden="true" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.9.34 1.84.58 2.8.7A2 2 0 0 1 22 16.92z"/></svg></button><span>Trả lời</span></div>
+            </div>
+            <p id="declineMessage" class="decline-message" role="status" aria-live="polite"></p>
+          </div>
+        </section>
+
+        <section id="chat" class="screen chat-screen" aria-label="Lời nhắn của tuôi" aria-hidden="true">
+          <header class="chat-header">
+            <button type="button" id="backBtn" class="icon-btn back-btn" aria-label="Về màn hình cuộc gọi">‹</button>
+            <div class="mini-avatar" id="chatAvatar">A</div>
+            <div class="chat-person"><strong id="chatName">Cục cức</strong><span id="status"><i></i> Đang kết nối...</span></div>
+            <button type="button" id="musicToggle" class="music-toggle" aria-label="Bật hoặc tắt nhạc nền" aria-pressed="false"><span class="music-symbol">📷</span><span id="musicLabel">Nhạc</span></button>
+          </header>
+          <div class="chat-intro"><span>♡ &nbsp; ĐÂY LÀ NHỮNG ĐIỀU TUI MUỐN NÓI &nbsp; ♡</span></div>
+          <div id="messages" class="messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+          <div class="chat-footer">
+            <div id="typing" class="typing hidden" aria-label="Cục cức đang viết tin nhắn"><span></span><span></span><span></span><small>Cục cức đang viết...</small></div>
+            <button type="button" id="skipBtn" class="skip-btn">Hiện tất cả lời nhắn ↗</button>
+            <button type="button" id="finishBtn" class="finish-btn hidden">Mở lời nhắn cuối ♡ <span>→</span></button>
+          </div>
+        </section>
+
+        <section id="ending" class="screen ending-screen" aria-label="Lời nhắn cuối" aria-hidden="true">
+          <div class="ending-stars" aria-hidden="true">✦ <span>✧</span> ✶</div>
+          <div class="ending-content">
+            <div class="ending-heart">♡</div>
+            <span id="endingEyebrow" class="section-kicker">CUỘC GỌI ĐÃ KẾT THÚC</span>
+            <h2 id="endingTitle">Nhưng câu chuyện của chúng mình thì chưa.</h2>
+            <p id="endingNote">Á đù ghê à</p>
+            <button type="button" id="restartBtn" class="replay-btn">Chan lại</button>
+            <button type="button" id="endingMusicToggle" class="ending-music-btn">♫ Nhạc nền</button>
+          </div>
+          <div class="ending-foot">Tuôi làm cái này băng cảm xúc thật</div>
+        </section>
+      </div>
+      <div class="phone-home-indicator" aria-hidden="true"></div>
+    </div>
+  </main>
+  <div class="outside-note">Hiu hiu em chạ iuu tuôii <span>♡</span></div>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Ảnh kỷ niệm" aria-hidden="true">
+    <button type="button" id="closeLightbox" class="close-lightbox" aria-label="Đóng ảnh">×</button>
+    <div id="lightboxVisual" class="lightbox-visual"></div>
+    <p id="lightboxCaption"></p>
+  </div>
+  <audio id="bgMusic" preload="auto" playsinline></audio>
+  <div id="musicToast" class="music-toast" role="status" aria-live="polite"></div>
+</body>
+</html>
